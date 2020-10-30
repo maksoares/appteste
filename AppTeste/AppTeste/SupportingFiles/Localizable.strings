@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  AppTeste
+
+  Created by marcel.soares on 14/10/20.
+  
+*/
+
+//Movies
+"Movies" = "Filmes";
+"Release date: " = "Lançamento: ";
+"Time: " = "Duração: ";
+"Failed to load movie" = "Falha ao carregar filme!";
+"Failed to load movies" = "Falha ao carregar filmes!";
+"Failed to book" = "Falha ao realizar reserva!";
+"Successful book" = "Reserva realizada com sucesso!";
+
+//Alert
+"Error" = "Erro";
+"Cancel" = "Cancelar";
+"Try again" = "Tentar novamente";
+
+//Movie details
+"Address: " = "Endereço: ";
+"Book" = "Reservar";
+"Details" = "Detalhes";
+"Failed to movie details" = "Falha ao carregar detalhes do filme";
+"Price: " = "Preço: ";
+
+
+//Book
+"Alert" = "Alerta";
+"Close" = "Fechar";
+"Name:" = "Nome:";
+"Invalid e-mail!" = "E-mail inválido!";
+"Invalid name!" = "Nome inválido!";

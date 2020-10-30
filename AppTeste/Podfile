@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AppTeste' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AppTeste
+
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Nuke', '7.5.2'
+
+  target 'AppTesteTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AppTesteUITests' do
+    # Pods for testing
+  end
+ 
+end
