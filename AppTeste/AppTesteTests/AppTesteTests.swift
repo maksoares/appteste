@@ -120,4 +120,50 @@ class AppTesteTests: XCTestCase {
         XCTAssertTrue(CustomFunctions().isValidEmail(email: "teste@teste.com"))
     }
     
+    func testInitParse() {
+        
+        let json = AppTesteDataGenerator.getMovieJson()
+        
+        if let model = try? JSONDecoder().decode(Movie.self, from: json.rawData()) {
+            
+            let expectedId = "1"
+            let expectedTitle = "ROCKY: UM LUTADOR"
+            let expectedDate = 218426520.0
+            let expectedSynopsis = "Rocky Balboa, um pequeno boxeador da classe trabalhadora da Filadélfia, é arbitrariamente escolhido para lutar contra o campeão dos pesos pesados, Apollo Creed, quando o adversário do invicto lutador agendado para a luta é ferido. Durante o treinamento com o mal-humorado Mickey Goldmill, Rocky timidamente começa um relacionamento com Adrian, a invisível irmã de Paulie, seu amigo empacotador de carne."
+            let expectedImage = "https://limaomecanico.com.br/wp-content/uploads/2019/11/Rocky-Um-Lutador.jpg"
+            let expectedTime = 218426520.0
+            let expectedPrice = 1.99
+            
+            //People
+            let expectedPersonId = "1"
+            let expectedName = "Sylvester Stallone\n(Rocky)"
+            let expectedPicture = "https://rollingstone.uol.com.br/media/_versions/sylvester_stallone_como_rocky_foto__metro-goldwyn-mayer_studios_inc___reproducao_via_imdb_widelg.jpg"
+            
+
+            XCTAssertEqual(model.movieId, expectedId)
+            XCTAssertEqual(model.title, expectedTitle)
+            XCTAssertEqual(model.date, expectedDate)
+            XCTAssertEqual(model.synopsis, expectedSynopsis)
+            XCTAssertEqual(model.image, expectedImage)
+            XCTAssertEqual(model.time, expectedTime)
+            XCTAssertEqual(model.price!, expectedPrice, accuracy: 0.001)
+            
+            //People
+            XCTAssertNotNil(model.people?.first)
+            let people = model.people!.first!
+            XCTAssertEqual(people.personId, expectedPersonId)
+            XCTAssertEqual(people.name, expectedName)
+            XCTAssertEqual(people.picture, expectedPicture)
+            
+        }else{
+            XCTAssert(false)
+        }
+
+    }
+
+    
 }
+
+
+
+

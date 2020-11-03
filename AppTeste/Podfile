@@ -12,6 +12,7 @@ target 'AppTeste' do
   pod 'RxCocoa'
   pod 'IQKeyboardManagerSwift'
   pod 'Nuke', '7.5.2'
+  pod 'SwiftyJSON'
 
   target 'AppTesteTests' do
     inherit! :search_paths

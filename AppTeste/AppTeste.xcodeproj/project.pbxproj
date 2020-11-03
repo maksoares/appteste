@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02CBBEAAC5060B0E60598BE0 /* Pods_AppTeste_AppTesteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED92AED7B18CC5398EB290CE /* Pods_AppTeste_AppTesteUITests.framework */; };
+		212038872551A9E100943A57 /* AppTesteDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212038862551A9E100943A57 /* AppTesteDataGenerator.swift */; };
 		212C9E952537299C00276C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C9E942537299C00276C29 /* AppDelegate.swift */; };
 		212C9E9E2537299E00276C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212C9E9D2537299E00276C29 /* Assets.xcassets */; };
 		212C9EA12537299E00276C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212C9E9F2537299E00276C29 /* LaunchScreen.storyboard */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		01DC1D2FC49B8CE6524B0AA9 /* Pods-AppTeste-AppTesteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTeste-AppTesteUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppTeste-AppTesteUITests/Pods-AppTeste-AppTesteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		212038862551A9E100943A57 /* AppTesteDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTesteDataGenerator.swift; sourceTree = "<group>"; };
 		212C9E912537299B00276C29 /* AppTeste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTeste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		212C9E942537299C00276C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		212C9E9D2537299E00276C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				212C9EAB2537299E00276C29 /* AppTesteTests.swift */,
+				212038862551A9E100943A57 /* AppTesteDataGenerator.swift */,
 				212C9EAD2537299E00276C29 /* Info.plist */,
 			);
 			path = AppTesteTests;
@@ -607,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				212C9EAC2537299E00276C29 /* AppTesteTests.swift in Sources */,
+				212038872551A9E100943A57 /* AppTesteDataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
